@@ -101,7 +101,7 @@ public class MainActivity extends ActionBarActivity {
         hover4.findViewById(R.id.cat).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent getWebPage = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.xiupin.com/"));
+                Intent getWebPage = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/daimajia"));
                 startActivity(getWebPage);
             }
         });
@@ -112,7 +112,7 @@ public class MainActivity extends ActionBarActivity {
                 final Intent emailIntent = new Intent(android.content.Intent.ACTION_SEND);
 
                 emailIntent.setType("plain/text");
-                emailIntent.putExtra(android.content.Intent.EXTRA_EMAIL, new String[]{"liangbin156@gmail.com"});
+                emailIntent.putExtra(android.content.Intent.EXTRA_EMAIL, new String[]{"daimajia@gmail.com"});
                 emailIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "About AndroidViewHover");
                 emailIntent.putExtra(android.content.Intent.EXTRA_TEXT, "I have a good idea about this project..");
 
